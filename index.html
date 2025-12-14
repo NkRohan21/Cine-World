@@ -1,0 +1,156 @@
+<!-- index.html: CineWorld Homepage -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineWorld - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/*
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+   
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 650px;
+    color: #202329;
+    text-align: center;
+}
+
+/* Categories Section */
+.categories {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+/* Cards */
+.card {
+    background: linear-gradient(135deg, #1e293b, #020617);
+    padding: 40px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #c31313;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+   
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    color: #facc15;
+}
+
+/* Footer */
+footer {
+    background: #020617;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #1e293b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+      
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    nav {
+        gap: 10px;
+    }
+}
+
+    </style>
+</head>
+
+<body class="hw">
+    <header>
+        <div class="logo">🎬 CineWorld</div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="hindi.html">Hindi</a>
+            <a href="kannada.html">Kannada</a>
+            <a href="tamil.html">Tamil</a>
+            <a href="telugu.html">Telugu</a>
+            <a href="malayalam.html">Malayalam</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>🎬 Welcome to CineWorld 🎥</h1>
+        <p>Your complete destination for movie info across all Indian languages.</p>
+    </section>
+
+    <section class="categories">
+        <h2>Explore Movies by Category</h2>
+        <div class="grid">
+            <a href="hindi.html" class="card">Hindi Movies</a>
+            <a href="kannada.html" class="card">Kannada Movies</a>
+            <a href="tamil.html" class="card">Tamil Movies</a>
+            <a href="telugu.html" class="card">Telugu Movies</a>
+            <a href="malayalam.html" class="card">Malayalam Movies</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 CineWorld. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
