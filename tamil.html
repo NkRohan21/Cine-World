@@ -1,0 +1,148 @@
+<!-- tamil.html: Tamil Movies Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamil Movies - CineWorld</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        function toggleDetails(id) {
+            const box = document.getElementById(id);
+            const all = document.querySelectorAll('.details');
+            all.forEach(d => {
+                if (d !== box) d.style.display = 'none';
+            });
+            box.style.display = box.style.display === 'block' ? 'none' : 'block';
+            box.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    </script>
+    
+</head>
+
+<body>
+    <header>
+        <div class="logo">🎬 CineWorld</div>
+        <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="hindi.html">Hindi</a><a href="kannada.html">Kannada</a><a href="tamil.html" class="active">Tamil</a><a href="telugu.html">Telugu</a><a href="malayalam.html">Malayalam</a><a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a><a href="feedback.html">Feedback</a><a href="login.html" class="login-btn">Login</a></nav>
+    </header>
+    <section class="page-header">
+        <h1>Tamil Movies</h1>
+        <p>Explore the best of Kollywood cinema</p>
+    </section>
+    <section class="movie-list">
+        <!-- MOVIE 1 -->
+       <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BNzNkMGU4YzYtNTY1MC00MmIzLWI0ZjctMzhlMzYwZjQ3MjZjXkEyXkFqcGc@._V1_.jpg" alt="Movie 1">
+            <div class="movie-info">
+                <h3>1. Eleven</h3>
+                <p>Crime • Thriller • Mystery (investigative serial‑killer drama)</p>
+                <button onclick="toggleDetails('tm1')">View Details</button>
+                <div id="tm1" class="details-box details">
+                    <p><strong>Description:</strong> Eleven is a tense crime thriller about a determined police officer who investigates a chilling series of murders with disturbing patterns.</p>
+                    <p><strong>Actors:</strong> Naveen Chandra, Reyaa Hari, Shashank</p>
+                    <p><strong>Director:</strong> Lokkesh Ajls</p><br>
+                    <a href="https://www.youtube.com/watch?v=tk4BtR8vaLI">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Amazon Prime</a> · <a href="#">Netflix</a> 
+                </div>
+            </div>
+        </div>
+        <!-- MOVIE 2 -->
+        <div class="mov">
+
+            <div class="movie-card">
+            <img src="https://cdn.district.in/movies-assets/images/cinema/gallery%20Maargan-5c5b4870-4292-11f0-aa9f-8fefdb33bbbf.jpg" alt="Movie 1">
+            <div class="movie-info">
+                <h3>2. Maargan</h3>
+                <p>Crime • Supernatural Thriller • Mystery</p>
+                <button onclick="toggleDetails('tm2')">View Details</button>
+                <div id="tm2" class="details-box details">
+                    <p><strong>Description:</strong> Maargan is a dark, suspense‑filled crime thriller about ADGP Dhruv (Vijay Antony), a senior cop investigating a disturbing series of murders where victims are connected through a mysterious substance and eerie clues.</p>
+                    <p><strong>Actors:</strong> Vijay Antony, Ajay Dhishan, P. Samuthirakani</p>
+                    <p><strong>Director:</strong> Leo John Paul</p><br>
+                    <a href="https://www.youtube.com/watch?v=S27THSM8yd4">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Hotstar</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- MOVIE 3 -->
+        <div class="mov">
+
+            <div class="movie-card">
+            <img src="https://w0.peakpx.com/wallpaper/655/459/HD-wallpaper-kamal-vikram-movie-first-look-poster-vijay-sethupathi.jpg" alt="Movie 1">
+            <div class="movie-info">
+                <h3>3. Vikram</h3>
+                <p> Action / Thriller</p>
+                <button onclick="toggleDetails('tm3')">View Details</button>
+                <div id="tm3" class="details-box details">
+                    <p><strong>Description:</strong> A retired agent returns to destroy a drug mafia.</p>
+                    <p><strong>Actors:</strong> Kamal Haasan, Vijay Sethupathi</p>
+                    <p><strong>Director:</strong> Lokesh Kanagaraj</p><br>
+                    <a href="https://www.youtube.com/watch?v=OKBMCL-frPU">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Netflix</a> · <a href="#">Hotstar</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- MOVIE 4 -->
+        <div class="mov">
+
+            <div class="movie-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyEZZegVtthvAl2KfQR2h_O1ob1MXuoBrX0w&s" alt="Movie 1">
+            <div class="movie-info">
+                <h3>4. Master</h3>
+                <p> Action / Thriller.</p>
+                <button onclick="toggleDetails('tm4')">View Details</button>
+                <div id="tm4" class="details-box details">
+                    <p><strong>Description:</strong> A professor takes on a juvenile crime syndicate.</p>
+                    <p><strong>Actors:</strong> Vijay, Vijay Sethupathi</p>
+                    <p><strong>Director:</strong> Lokesh Kanagaraj</p><br>
+                    <a href="https://www.youtube.com/watch?v=1_iUFT3nWHk">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Amazon Prime</a> · <a href="#">Netflix</a> · <a href="#">Hotstar</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- MOVIE 5 -->
+        <div class="mov">
+
+            <div class="movie-card">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/b4a1ba87123937.5daeb6af5f27c.jpg" alt="Movie 1">
+            <div class="movie-info">
+                <h3>5. Kaithi</h3>
+                <p>Family crime thriller masterpiece.</p>
+                <button onclick="toggleDetails('tm5')">View Details</button>
+                <div id="tm5" class="details-box details">
+                    <p><strong>Description:</strong> A prisoner helps police fight drug mafia in one night</p>
+                    <p><strong>Actors:</strong> Karthi</p>
+                    <p><strong>Director:</strong> Lokesh Kanagaraj</p><br>
+                    <a href="https://www.youtube.com/watch?v=g79CvhHaj5I">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Amazon Prime</a><a href="#">Hotstar</a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        
+        <section class="coming-soon">
+    <h2>🎥 More Movies Coming Soon...</h2>
+    <p>We’re working hard to bring you more exciting Tamil movies. Stay tuned!</p>
+</section>
+       
+    </section>
+    <footer>
+        <p>© 2025 CineWorld. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

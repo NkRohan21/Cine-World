@@ -1,0 +1,69 @@
+<!-- feedback.html: CineWorld Feedback Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback - CineWorld</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">🎬 CineWorld</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="hindi.html">Hindi</a>
+            <a href="kannada.html">Kannada</a>
+            <a href="tamil.html">Tamil</a>
+            <a href="telugu.html">Telugu</a>
+            <a href="malayalam.html">Malayalam</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html" class="active">Feedback</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Feedback</h1>
+        <p>Your feedback makes CineWorld better!</p>
+    </section>
+
+    <section class="feedback-section">
+        <div class="feedback-card">
+            <h2>Share Your Experience</h2>
+            <form>
+                <label>Your Name</label>
+                <input type="text" placeholder="Enter your name" required />
+
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required />
+
+                <label>Rate Us</label>
+                <select required>
+                <option value="">Select rating</option>
+                <option>⭐</option>
+                <option>⭐⭐</option>
+                <option>⭐⭐⭐</option>
+                <option>⭐⭐⭐⭐</option>
+                <option>⭐⭐⭐⭐⭐</option>
+            </select>
+
+                <label>Your Feedback</label>
+                <textarea placeholder="Write your feedback here" required></textarea>
+
+                <button type="submit" class="btn">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 CineWorld. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

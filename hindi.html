@@ -1,0 +1,158 @@
+<!-- hindi.html: Hindi Movies Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hindi Movies - CineWorld</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        function toggleDetails(id) {
+            const box = document.getElementById(id);
+            const all = document.querySelectorAll('.details');
+            all.forEach(d => {
+                if (d !== box) d.style.display = 'none';
+            });
+            box.style.display = box.style.display === 'block' ? 'none' : 'block';
+            box.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">🎬 CineWorld</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="hindi.html" class="active">Hindi</a>
+            <a href="kannada.html">Kannada</a>
+            <a href="tamil.html">Tamil</a>
+            <a href="telugu.html">Telugu</a>
+            <a href="malayalam.html">Malayalam</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Hindi Movies</h1>
+        <p>Explore the best of Bollywood cinema</p>
+    </section>
+
+    <section class="movie-list">
+
+        <!-- MOVIE TEMPLATE -->
+        <!-- Repeat for 7 movies -->
+
+       
+        <!-- MOVIE 1 -->
+        <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/I/714kDfwueCL._AC_UF894,1000_QL80_.jpg" alt="Movie 1">
+            <div class="movie-info">
+                <h3>1. Drishyam</h3>
+                <p>Family crime thriller masterpiece.</p>
+                <button onclick="toggleDetails('h1')">View Details</button>
+                <div id="h1" class="details-box details">
+                    <p><strong>Description:</strong>Drishyam is a gripping crime thriller that follows Vijay Salgaonkar, a simple cable-TV operator who uses his sharp intellect to protect his family after an unexpected crime.</p>
+                    <p><strong>Actors:</strong> Ajay Devgn, Tabu, Shriya Saran</p>
+                    <p><strong>Director:</strong> Nishikant Kamat</p>
+                    <a href="https://www.youtube.com/watch?v=64xJLmcA2K8">Click here to watch trailer on YouTube</a><br><br>
+                    <a href="#">Hotstar</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MOVIE 1 -->
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Dhurandhar_poster.jpg/250px-Dhurandhar_poster.jpg" alt="Movie 1">
+            <div class="movie-info">
+                <h3>2. Dhurandhar</h3>
+                <p>FAction • Spy • Thriller • Drama</p>
+                <button onclick="toggleDetails('h2')">View Details</button>
+                <div id="h2" class="details-box details">
+                    <p><strong>Description:</strong></p>
+                    <p><strong>Actors:</strong> Ranveer Singh, sanjay Dutt, Sara Arjun</p>
+                    <p><strong>Director:</strong> Aditya Dhar</p>
+                    <a href="https://www.youtube.com/watch?v=BKOVzHcjEIo">Click here to watch trailer on YouTube</a><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Amazon Prime</a> . <a href="#">Netflix</a> 
+                </div>
+            </div>
+        </div>
+
+         <!-- MOVIE 1 -->
+        <div class="movie-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSn9NRy28GOkVhwU3HvrRp7XaOcpSpMOc9yw&s" alt="Movie 1">
+            <div class="movie-info">
+                <h3>3. War 2</h3>
+                <p>Action • Thriller</p>
+                <button onclick="toggleDetails('h3')">View Details</button>
+                <div id="h3" class="details-box details">
+                    <p><strong>Description:</strong></p>
+                    <p><strong>Actors:</strong> Mohanlal, Meena</p>
+                    <p><strong>Director:</strong> Jeethu Joseph</p>
+                    <a href="https://www.youtube.com/watch?v=mjBym9uKth4">Click here to watch trailer on YouTube</a><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Amazon Prime</a> 
+                </div>
+            </div>
+        </div>
+
+         <!-- MOVIE 1 -->
+        <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/I/61-0YNDzTbL._AC_UF894,1000_QL80_.jpg" alt="Movie 1">
+            <div class="movie-info">
+                <h3>4. 3 Idiots</h3>
+                <p> Comedy / Drama</p>
+                <button onclick="toggleDetails('h4')">View Details</button>
+                <div id="h4" class="details-box details">
+                    <p><strong>Description:</strong></p>
+                    <p><strong>Actors:</strong> Aamir Khan, R. Madhavan, Sharman Joshi</p>
+                    <p><strong>Director:</strong> Rajkumar Hirani</p>
+                    <a href="https://www.youtube.com/watch?v=K0eDlFX9GMc">Click here to watch trailer on YouTube</a><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Hotstar</a>
+                </div>
+            </div>
+        </div>
+
+         <!-- MOVIE 1 -->
+        <div class="movie-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSagMRKLXoiDbKGYM2koTUXnvd6ApIs8Hitrw&s" alt="Movie 1">
+            <div class="movie-info">
+                <h3>5. Ramayana</h3>
+                <p>mythological epic / pan-Indian film.</p>
+                <button onclick="toggleDetails('h5')">View Details</button>
+                <div id="h5" class="details-box details">
+                    <p><strong>Description:</strong></p>
+                    <p><strong>Actors:</strong> Ranbir Kapoor, Sai Pallavi, Yash</p>
+                    <p><strong>Director:</strong> Nitesh Tiwari</p><br>
+                    <a href="https://www.youtube.com/watch?v=gzUu-FJ7s-Y">Click here to watch teaser on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <p> Movie Available After Release</b></p>
+                </div>
+            </div>
+        </div>
+ <section class="coming-soon">
+    <h2>🎥 More Movies Coming Soon...</h2>
+    <p>We’re working hard to bring you more exciting Hindi movies. Stay tuned!</p>
+</section>
+        <!-- Continue similarly for 5 more movies -->
+
+    </section>
+
+    <footer>
+        <p>© 2025 CineWorld. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+/* styles.css: Global Styles for CineWorld */
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+ body{
+            background: black;
+        }
+.hw {
+    background: #f4f4f4;
+    color: #222;
+}
+
+.btn:hover{
+    background-color: red;
+}
+.coming-soon {
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 40px;
+    background: linear-gradient(135deg, #111, #222);
+    color: #fff;
+    border: 2px dashed #ff9800;
+    border-radius: 10px;
+}
+
+.coming-soon h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ff9800;
+    letter-spacing: 1px;
+}
+
+.coming-soon p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* Welcome Page Background */
+.welcome-body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(180deg, #ffffff, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* Center Box */
+.welcome-container {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 40px 60px;
+    border-radius: 15px;
+}
+
+/* Logo */
+.welcome-logo {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+/* Text */
+.welcome-container h1 {
+    margin: 10px 0;
+    font-size: 32px;
+}
+
+.welcome-container p {
+    font-size: 16px;
+    color: #cccccc;
+}
+
+/* Enter Button */
+.enter-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #e50914;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.enter-btn:hover {
+    background-color: #ff1f2d;
+}
+
+
+
+/* HEADER */
+
+header {
+    background: #111;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffcc00;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 16px;
+    
+}
+
+nav a.active {
+    color: #ffcc00;
+}
+
+
+.login-btn {
+    background: #ffcc00;
+    color: #000 !important;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.login-btn:hover{
+    background-color: orangered;
+    color: yellow;
+}
+
+/* PAGE HEADER */
+
+.page-header {
+    text-align: center;
+    padding: 30px;
+    background: white;
+    margin-bottom: 20px;
+}
+
+.page-header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+
+/* MOVIE LIST */
+
+.movie-list {
+    width: 90%;
+    margin: auto;
+}
+
+.movie-card {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.movie-card img {
+    width: 120px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.movie-info h3 {
+    font-size: 22px;
+    color: #111;
+}
+
+.movie-info button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #111;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.movie-info button:hover {
+        background: #7e73e9;
+
+
+}
+
+.details-box {
+    display: none;
+    margin-top: 10px;
+    background: #fafafa;
+    padding: 12px;
+    border-left: 3px solid #ffcc00;
+}
+nav a:hover{
+    color: orangered;
+}
+a:hover{
+    color: red;
+}
+
+
+
+/* ABOUT PAGE */
+
+.about-content {
+    width: 85%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-content ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+/* CONTACT & FEEDBACK */
+
+.contact-section,
+.feedback-section {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.contact-card,
+.feedback-card {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #111;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* FAQ */
+
+.faq-section {
+    width: 85%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    color: #111;
+}
+
+
+/* AUTH PAGES */
+
+.auth-body {
+    background: #222;
+    color: white;
+}
+
+.auth-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.big-logo {
+    font-size: 36px;
+    color: #ffcc00;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.auth-card {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.auth-card h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.switch-link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.switch-link a {
+    color: #ffcc00;
+}
+.switch-link a:hover{
+    color: red;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #111;
+    color: white;
+    margin-top: 30px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .movie-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .movie-card img {
+        margin-bottom: 10px;
+    }
+    .contact-section,
+    .feedback-section {
+        flex-direction: column;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav a {
+        margin: 5px;
+    }
+}

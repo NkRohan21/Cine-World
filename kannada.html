@@ -1,0 +1,178 @@
+</body>
+
+</html>
+<!-- kannada.html: Kannada Movies Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kannada Movies - CineWorld</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        function toggleDetails(id) {
+            const box = document.getElementById(id);
+            const all = document.querySelectorAll('.details');
+            all.forEach(d => {
+                if (d !== box) d.style.display = 'none';
+            });
+            box.style.display = box.style.display === 'block' ? 'none' : 'block';
+            box.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+        
+    </script>
+    <style>
+       
+    </style>
+</head>
+
+<body >
+    <header>
+        <div class="logo">🎬 CineWorld</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="hindi.html">Hindi</a>
+            <a href="kannada.html" class="active">Kannada</a>
+            <a href="tamil.html">Tamil</a>
+            <a href="telugu.html">Telugu</a>
+            <a href="malayalam.html">Malayalam</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Kannada Movies</h1>
+        <p>Explore the best of Sandalwood cinema</p>
+    </section>
+
+    <section class="movie-list">
+
+        <!-- MOVIE 1 -->
+         <div class="movie-card">
+            <img src="https://images.filmibeat.com/ph-big/2025/09/kantara-a-legend-chapter-11758542916_0.jpeg" alt="1. Kantara: Chapter 1">
+            <div class="movie-info info">
+                <h3>1. Kantara: Chapter 1</h3>
+                <p> Action / Mythological / Period Drama. </p>
+                <button onclick="toggleDetails('k1')" >View Details</button>
+                <div id="k1" class="details-box details">
+                    <p><strong>Description:</strong> prequel to Kantara, exploring ancient traditions, divine spirits, and the origins of Bhootha Kola in a historical setting.</p>
+                    <p><strong>Actors:</strong> Rishab Shetty</p>
+                    <p><strong>Director:</strong> Rishab Shetty</p>
+                    <a href="https://www.youtube.com/watch?v=TMQUFhWm8C0">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Amazon Prime</a> · <a href="#">Netflix</a> · <a href="#">Hotstar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOVIE 2 -->
+        <div class="movie-card">
+            <img src="http://www.impawards.com/intl/india/2022/posters/kgf_chapter_two_ver7.jpg" alt="Movie 1">
+            <div class="movie-info">
+                <h3>2. KGF: Chapter 2</h3>
+                <p> Action / Crime / Period Drama</p>
+                <button onclick="toggleDetails('k2')">View Details</button>
+                <div id="k2" class="details-box details">
+                    <p><strong>Description:</strong> Rocky consolidates his power in KGF while facing powerful enemies and political forces.</p>
+                    <p><strong>Actors:</strong> Yash, Sanjay Dutt, Raveena Tandon, Srinidhi Shetty</p>
+                    <p><strong>Director:</strong> Prashanth Neel</p>
+                    <a href="https://www.youtube.com/watch?v=jQsE85cI384">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Amazon Prime</a> · <a href="#">Netflix</a> · <a href="#">Hotstar</a>
+                </div>
+            </div>
+        </div>
+        <!-- MOVIE 3 (Dummy structure repeated) -->
+        <div class="movie-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFt1U5sIKacIytnuT3dBv6NbwqkPK2XXd5IA&s" alt="Movie 1">
+            <div class="movie-info">
+                <h3>3. Max</h3>
+                <p>Family crime thriller masterpiece.</p>
+                <button onclick="toggleDetails('k3')">View Details</button>
+                <div id="k3" class="details-box details">
+                    <p><strong>Description:</strong> A high-energy action thriller centered around crime, power, and intense confrontations.</p>
+                    <p><strong>Actors:</strong> Sudeep</p>
+                    <p><strong>Director:</strong> Vijay Kartikeyaa</p>
+                    <a href="https://www.youtube.com/watch?v=jgUtOlged-c">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Amazon Prime</a> · <a href="#">Netflix</a>
+                </div>
+            </div>
+        </div>
+
+       <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BNzNiNDJjZTgtNDFiYi00ODNhLWIzYjQtNDBlZDk4M2IxNDIwXkEyXkFqcGc@._V1_.jpg" alt="Movie 1">
+            <div class="movie-info">
+                <h3>4. Ghost</h3>
+                <p>Family crime thriller masterpiece.</p>
+                <button onclick="toggleDetails('k4')">View Details</button>
+                <div id="k4" class="details-box details">
+                    <p><strong>Description:</strong> A mysterious gangster known as Ghost shakes the entire crime network and police system.</p>
+                    <p><strong>Actors:</strong> Shiva Rajkumar</p>
+                    <p><strong>Director:</strong> M. G. Srinivas</p>
+                    <a href="https://www.youtube.com/watch?v=lI2eFTLOFjI">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Amazon Prime</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BZGMwMzRmYWItMzk3Yy00NWIxLWExMDQtMWFmMmQ4YThmZGNhXkEyXkFqcGc@._V1_.jpg" alt="Movie 1">
+            <div class="movie-info">
+                <h3>5. Birbal Trilogy – Case 1: Finding Vajramuni</h3>
+                <p>Family crime thriller masterpiece.</p>
+                <button onclick="toggleDetails('k5')">View Details</button>
+                <div id="k5" class="details-box details">
+                    <p><strong>Description:</strong> A gritty gangster drama exploring power, greed, and the dark side of ambition.</p>
+                    <p><strong>Actors:</strong> Rukmini Vasanth, M. G. Srinivas</p>
+                    <p><strong>Director:</strong> M. G. Srinivas</p>
+                    <a href="https://www.youtube.com/watch?v=nirRr3j1MwI">Click here to watch trailer on YouTube</a><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Hotstar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BMDZiNzAwZTQtYWIwMC00ODA0LWJiOGMtZTgzZGYzYzMxMDNiXkEyXkFqcGc@._V1_.jpg" alt="Movie 1">
+            <div class="movie-info">
+                <h3>6. Toxic</h3>
+                <p> A Fairy Tale for Grown-Ups.</p>
+                <button onclick="toggleDetails('k6')">View Details</button>
+                <div id="k6" class="details-box details">
+                    <p><strong>Description:</strong>
+                    This is an upcoming movie currently under production.
+                    More details, trailer, and streaming information will be updated
+                    after the official announcements.</p>
+                    <p><strong>Actors:</strong> Yash</p>
+                    <p><strong>Director:</strong> Jeethu Joseph</p>
+                    <p><b> Trailer Coming Soon</p>
+                    <p> Movie Available After Release</b></p>
+                </div>
+            </div>
+        </div>
+
+        <section class="coming-soon">
+    <h2>🎥 More Movies Coming Soon...</h2>
+    <p>We’re working hard to bring you more exciting Kannada movies. Stay tuned!</p>
+</section>
+
+
+    </section>
+
+    <footer>
+        <p>© 2025 CineWorld. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

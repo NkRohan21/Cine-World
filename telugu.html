@@ -1,0 +1,171 @@
+<!-- telugu.html: Telugu Movies Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telugu Movies - CineWorld</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        function toggleDetails(id) {
+            const box = document.getElementById(id);
+            const all = document.querySelectorAll('.details');
+            all.forEach(d => {
+                if (d !== box) d.style.display = 'none';
+            });
+            box.style.display = box.style.display === 'block' ? 'none' : 'block';
+            box.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">🎬 CineWorld</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="hindi.html">Hindi</a>
+            <a href="kannada.html">Kannada</a>
+            <a href="tamil.html">Tamil</a>
+            <a href="telugu.html" class="active">Telugu</a>
+            <a href="malayalam.html">Malayalam</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Telugu Movies</h1>
+        <p>Explore the best of Tollywood cinema</p>
+    </section>
+
+    <section class="movie-list">
+
+        <!-- MOVIE 1 -->
+        <div class="movie-card">
+            <img src="https://i.pinimg.com/736x/7c/5f/9e/7c5f9e16e5de9eb448559649de4a8b5b.jpg" alt="Movie 1">
+            <div class="movie-info">
+                <h3>1. Baahubali: The Beginning</h3>
+                <p> Epic / Action</p>
+                <button onclick="toggleDetails('tl1')">View Details</button>
+                <div id="tl1" class="details-box details">
+                    <p><strong>Description:</strong> A legendary tale of power and kingdom rivalry.</p>
+                    <p><strong>Actors:</strong> Prabhas, Rana Daggubati</p>
+                    <p><strong>Director:</strong> S.S. Rajamouli</p><br>
+                    <a href="https://www.youtube.com/watch?v=3NQRhE772b0">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Amazon Prime</a> 
+                </div>
+            </div>
+        </div>
+        <!-- MOVIE 2 -->
+        <div class="movie-card">
+            <img src="https://images.ottplay.com/posters/6dca88a8c30a6ea590858882faa51052.jpg" alt="Movie 1">
+            <div class="movie-info">
+                <h3>2. Kushi</h3>
+                <p>Romance • Comedy • Drama</p>
+                <button onclick="toggleDetails('tl2')">View Details</button>
+                <div id="tl2" class="details-box details">
+                    <p><strong>Description:</strong> Kushi tells the story of Viplav and Aaradhya, two individuals from very different family backgrounds who fall deeply in love.</p>
+                    <p><strong>Actors:</strong> Vijay Deverakonda, Samantha Ruth Prabhu</p>
+                    <p><strong>Director:</strong> Shiva Nirvana</p><br>
+                    <a href="https://www.youtube.com/watch?v=bk_5n4mS-lk">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Hotstar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOVIE 3 -->
+         <div class="movie-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN6THvb3P-5TByBsNF0buMYPePDzI6KiqajA&s" alt="Movie 1">
+            <div class="movie-info">
+                <h3>3. Pushpa - 2</h3>
+                <p> Action / Crime</p>
+                <button onclick="toggleDetails('tl3')">View Details</button>
+                <div id="tl3" class="details-box details">
+                    <p><strong>Description:</strong> Rise of a smuggler in red sandalwood trade.</p>
+                    <p><strong>Actors:</strong> Allu Arjun, Rashmika Mandanna</p>
+                    <p><strong>Director:</strong> Sukumar</p><br>
+                    <a href="https://www.youtube.com/watch?v=g3JUbgOHgdw">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Netflix</a> · <a href="#">Hotstar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOVIE 4 -->
+         <div class="movie-card">
+            <img src="https://wallpapers.com/images/hd/r-r-r-movie-poster-gvh8r7rfpp7z5j5x.jpg" alt="Movie 1">
+            <div class="movie-info">
+                <h3>4. RRR</h3>
+                <p> Action / Historical Fiction.</p>
+                <button onclick="toggleDetails('tl4')">View Details</button>
+                <div id="tl4" class="details-box details">
+                    <p><strong>Description:</strong> A fictional story of two freedom fighters.</p>
+                    <p><strong>Actors:</strong> Ram Charan, NTR Jr</p>
+                    <p><strong>Director:</strong> S.S. Rajamouli</p><br>
+                    <a href="https://www.youtube.com/watch?v=NgBoMJy386M">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Amazon Prime</a> . <a href="#">Hotstar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOVIE 5 -->
+        <div class="movie-card">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivWa3FxAANGO0oZsic0si2Xy2tUCWbThrADU_dZv1NxKyMtc2pwc0XpMr0_xihFFn1lPhCieDlKv1GasoUXlky4Twf3dz93QVOB804BE_IrE-0X5_ZowFyvepAblVD8-DIVelxLfhrOhsx/s1600/rakshasudu-movie-pre-look-poster.jpg" alt="Movie 1">
+            <div class="movie-info">
+                <h3>5. Rakshasudu</h3>
+                <p>Family crime thriller masterpiece.</p>
+                <button onclick="toggleDetails('tl5')">View Details</button>
+                <div id="tl5" class="details-box details">
+                    <p><strong>Description:</strong>Rakshasudu is a tense psychological crime thriller following SI Arun, a young cop on the hunt for a mysterious serial killer who targets school girls. As the murders escalate, Arun must decode clues and confront horrifying truths to stop the psychopath before more lives are lost.</p>
+                    <p><strong>Actors:</strong> Bellamkonda Sreenivas, Anupama Parameswaran</p>
+                    <p><strong>Director:</strong> Ramesh Varma</p><br>
+                    <a href="https://www.youtube.com/watch?v=DF6dmkWXTlY">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Amazon Prime</a> · <a href="#">Netflix</a> · <a href="#">Hotstar</a>
+                </div>
+            </div>
+        </div>
+        <!-- MOVIE 6 -->
+         <div class="movie-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBloGjCfdNv1I1O424lr0Cv6XMqUgg4k5Odg&s" alt="Movie 1">
+            <div class="movie-info">
+                <h3>6. HIT: The Third Case</h3>
+                <p>Action • Crime • Thriller • Mystery</p>
+                <button onclick="toggleDetails('tl6')">View Details</button>
+                <div id="tl6" class="details-box details">
+                    <p><strong>Description:</strong></p>
+                    <p><strong>Actors:</strong> Nani, Srinidhi Shetty</p>
+                    <p><strong>Director:</strong> Sailesh Kolanu</p><br>
+                    <a href="https://www.youtube.com/watch?v=kAtfaaUgDRU">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Amazon Prime</a> · <a href="#">Hotstar</a>
+                </div>
+            </div>
+        </div>
+
+        
+        <section class="coming-soon">
+    <h2>🎥 More Movies Coming Soon...</h2>
+    <p>We’re working hard to bring you more exciting Telugu movies. Stay tuned!</p>
+</section>
+
+    </section>
+
+    <footer>
+        <p>© 2025 CineWorld. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

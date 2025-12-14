@@ -1,0 +1,191 @@
+<!-- malayalam.html: CineWorld Malayalam Movies Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malayalam Movies - CineWorld</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        function toggleDetails(id) {
+            const box = document.getElementById(id);
+            const all = document.querySelectorAll('.details');
+            all.forEach(d => {
+                if (d !== box) d.style.display = 'none';
+            });
+            box.style.display = box.style.display === 'block' ? 'none' : 'block';
+            box.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    </script>
+    
+    
+    
+</head>
+
+<body>
+    <header>
+        <div class="logo">🎬 CineWorld</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="hindi.html">Hindi</a>
+            <a href="kannada.html">Kannada</a>
+            <a href="tamil.html">Tamil</a>
+            <a href="telugu.html">Telugu</a>
+            <a href="malayalam.html" class="active">Malayalam</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Malayalam Movies</h1>
+        <p>Top Malayalam films with cast, director and streaming info.</p>
+    </section>
+
+    <section class="movie-list">
+
+        <!-- MOVIE 1 -->
+        
+ <div class="movie-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGj8VmbX7ZYbgxlsO_BalWFxvSCF_xli_eag&s" alt="Movie 5">
+            <div class="movie-info">
+                <h3>1. Identity</h3>
+                <p>Crime • Thriller • Mystery</p>
+                <button onclick="toggleDetails('m5')">View Details</button>
+                <div id="m5" class="details-box details">
+                    <p><strong>Description:</strong> Identity is a gripping crime thriller about a skilled sketch artist and a determined police officer who team up to track down a mysterious 
+                        killer using only fragments of a witness’s memory and forensic clues. 
+                        As the investigation deepens, layers of deception and suspense unravel, leading to intense confrontations and shocking revelations.</p>
+                    <p><strong>Actors:</strong>  Tovino Thomas, Trisha Krishnan</p>
+                    <p><strong>Director:</strong> Akhil Paul & Anas Khan</p>
+                    <a href="https://www.youtube.com/watch?v=6LSqReemlTk">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Amazon Prime</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MOVIE 3 -->
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/original/dXRWmJhZ6VGUTuKb6ID6ij1U0Qr.jpg" alt="Movie 3">
+            <div class="movie-info">
+                <h3>2. Anjaam Pathira</h3>
+                <p>Crime • Thriller • Mystery</p>
+                <button onclick="toggleDetails('m3')">View Details</button>
+                <div id="m3" class="details-box details">
+                    <p><strong>Description:</strong> Anjaam Pathiraa follows Anwar Hussain, a brilliant criminal psychologist
+                         who assists the police in tracking down a brutal serial killer targeting police officers. As the murders
+                          become increasingly disturbing, hidden motives and shocking truths emerge, leading to a tense and 
+                          unpredictable climax. </p>
+                    <p><strong>Actors:</strong> Kunchacko Boban, Jinu Joseph, Unnimaya Prasad</p>
+                    <p><strong>Director:</strong>  Midhun Manuel Thomas</p>
+                    <a href="https://www.youtube.com/watch?v=dn5KZD1E67Y">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Hotstar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOVIE 4 -->
+        <div class="movie-card">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/10cbd9185852421.65ca1cecbe87b.jpg" alt="Movie 4">
+            <div class="movie-info">
+                <h3>3. Premalu</h3>
+                <p>Romantic • Comedy • Drama</p>
+                <button onclick="toggleDetails('m4')">View Details</button>
+                <div id="m4" class="details-box details">
+                    <p><strong>Description:</strong> Premalu follows Sachin, a carefree young man who moves to Hyderabad and unexpectedly falls for Reenu, a confident and independent woman. 
+                        What begins as a simple crush turns into a charming journey of love, misunderstandings, friendship, and emotional growth.</p>
+                    <p><strong>Actors:</strong> Naslen K. Gafoor, Mamitha Baiju</p>
+                    <p><strong>Director:</strong> Girish A.D</p>
+                    <a href="https://www.youtube.com/watch?v=rR_2ti4l3nM">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Amazon Prime</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOVIE 5 -->
+
+<div class="movie-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3bLjI1JodPHBzfzZPu8-zJRhkXb6zk97JjA&s" alt="Movie 1">
+            <div class="movie-info">
+                <h3>4. Drishyam</h3>
+                <p>Family crime thriller masterpiece.</p>
+                <button onclick="toggleDetails('m1')">View Details</button>
+                <div id="m1" class="details-box details">
+                    <p><strong>Description:</strong> Drishyam follows Georgekutty, a simple cable-TV operator whose family becomes
+                         entangled in a serious crime. Using intelligence, patience, and cinematic knowledge,
+                          he outsmarts the police to protect his loved ones.</p>
+                    <p><strong>Actors:</strong> Mohanlal, Meena</p>
+                    <p><strong>Director:</strong> Jeethu Joseph</p>
+                    <a href="https://www.youtube.com/watch?v=mYWreq4CcRA">Click here to watch trailer on YouTube</a><br>
+                    <a href="#">Amazon Prime</a> · <a href="#">Netflix</a> · <a href="#">Hotstar</a>
+                </div>
+            </div>
+        </div>
+
+
+       
+        <!-- MOVIE 6 -->
+        <div class="movie-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwVP2FRcFIUl0IOMjQD_tJN_g-S7K74KOjsA&s" alt="Movie 6">
+            <div class="movie-info">
+                <h3>5. Cold Case</h3>
+                <p>Crime • Thriller • Mystery • Supernatural</p>
+                <button onclick="toggleDetails('m6')">View Details</button>
+                <div id="m6" class="details-box details">
+                    <p><strong>Description:</strong> Cold Case follows ACP Sathyajith and journalist Medha as they investigate a mysterious human skull discovered in a deserted area.
+                         As the probe deepens, the case reveals chilling secrets connected to a dark past, blurring the line between rational crime investigation and supernatural forces.</p>
+                    <p><strong>Actors:</strong> Prithviraj Sukumaran, Aditi Balan</p>
+                    <p><strong>Director:</strong> Tanu Balak</p>
+                    <a href="https://www.youtube.com/watch?v=h69nEmLlqS8">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">SonyLIV</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOVIE 7 -->
+        <div class="movie-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu0JzqBfvLtEp8gGMgOdO2oEZySk-nMCkkxA&s" alt="Movie 7">
+            <div class="movie-info">
+                <h3>6. Hridayam</h3>
+                <p>Romantic • Drama • Coming-of-Age.</p>
+                <button onclick="toggleDetails('m7')">View Details</button>
+                <div id="m7" class="details-box details">
+                    <p><strong>Description:</strong> Hridayam follows Arun, a young engineering student, as he navigates college life, friendships, love, heartbreak, and self-realization.
+                         Through relationships with Darshana and Nithya, the film beautifully portrays emotional growth, maturity, 
+                         and the journey toward understanding true love and responsibility.</p>
+                    <p><strong>Actors:</strong> Pranav Mohanlal, Kalyani Priyadarshan, Darshana Rajendran</p>
+                    <p><strong>Director:</strong> Vineeth Sreenivasan</p>
+                    <a href="https://www.youtube.com/watch?v=48tqyDA5Sb0">Click here to watch trailer on YouTube</a><br><br>
+                    <p><strong> Movie available on:</strong></p>
+                    <a href="#">Netflix</a>
+                </div>
+            </div>
+        </div>
+        
+        <section class="coming-soon">
+    <h2>🎥 More Movies Coming Soon...</h2>
+    <p>We’re working hard to bring you more exciting malayalam movies. Stay tuned!</p>
+</section>
+
+    </section>
+
+    <footer>
+        <p>© 2025 CineWorld. All Rights Reserved.</p>
+    </footer>
+    
+
+</body>
+
+</html>
